@@ -86,7 +86,6 @@ export default function BasicInfoScreen(props) {
 
     function copySeedToClipboard() {
         navigator.clipboard.writeText(seed)
-            .then(() => Promise.reject())
             .then(onSeedCopySuccess)
             .catch(onSeedCopyError);
     }
